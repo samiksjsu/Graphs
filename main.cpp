@@ -15,5 +15,5 @@ int main() {
     findBridgesAndArticulationPoints g1;
     g1.main();
 
-    cout << "Hello" << endl;
+    cout << "Hello World" << endl;
 }
