@@ -11,16 +11,14 @@
 using namespace std;
 
 // Detect cycle in an undirected graph
-bool hasCycle(vector<vector<int>> &adjList, int curr, vector<bool> &visited, int parent) {
-    visited[curr] = true;
+bool hasCycle(vector<vector<int>> &adjList, int at, vector<bool> &visited, int parent) {
+    visited[at] = true;
 
-    for (int i = 0; i < adjList.at(curr).size(); i++) {
-        int v = adjList.at(curr).at(i);
-
+    for (auto &to: adjList[at]) {
         // In an undirected graph, parent is connected to child and vice versa.
         // This is not considered as a cycle in an undirected graph, rather this is a property
         // The first check in the below if ensures that
-        if ((visited[v] && parent != v) || (!visited[v] && hasCycle(adjList, v, visited, curr)))
+        if ((visited[to] && parent != to) || (!visited[to] && hasCycle(adjList, to, visited, at)))
             return true;
     }
 

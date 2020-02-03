@@ -37,28 +37,26 @@ void reconstructPath(int curr, unordered_map<int, int> &parentMap) {
 }
 
 // Detect cycle in a directed graph
-bool hasCycle(vector<vector<int>> &adjList, int curr, vector<bool> &visited, vector<bool> &visiting, unordered_map<int, int> &parentMap) {
-    visiting[curr] = true;
+bool hasCycle(vector<vector<int>> &adjList, int at, vector<bool> &visited, vector<bool> &visiting, unordered_map<int, int> &parentMap) {
+    visiting[at] = true;
 
-    for (int i = 0; i < adjList.at(curr).size(); ++i) {
-        int v = adjList.at(curr).at(i);
-        parentMap[v] = curr;
+    for (auto &to: adjList[at]) {
+        parentMap[to] = at;
 
-        if (visited[v] == true) continue;
+        if (visited[to] == true) continue;
 
-        if (visiting[v]) {
-            reconstructPath(v, parentMap);
+        if (visiting[to]) {
+            reconstructPath(to, parentMap);
             return true;
         }
 
-        if (hasCycle(adjList, v, visited, visiting, parentMap)) {
-            // reconstructPath(v, parentMap);
+        if (hasCycle(adjList, to, visited, visiting, parentMap)) {
             return true;
         }
     }
 
-    visiting[curr] = false;
-    visited[curr] = true;
+    visiting[at] = false;
+    visited[at] = true;
 
     return false;
 }

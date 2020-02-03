@@ -86,6 +86,12 @@
 		<Unit filename="C:/Users/samik/CLionProjects/Graphs/DijkstrasShortestPathAdjacencyList.h">
 			<Option target="Graphs"/>
 		</Unit>
+		<Unit filename="C:/Users/samik/CLionProjects/Graphs/Graph.h">
+			<Option target="Graphs"/>
+		</Unit>
+		<Unit filename="C:/Users/samik/CLionProjects/Graphs/TarjanScc.h">
+			<Option target="Graphs"/>
+		</Unit>
 		<Unit filename="C:/Users/samik/CLionProjects/Graphs/UnionFind.h">
 			<Option target="Graphs"/>
 		</Unit>

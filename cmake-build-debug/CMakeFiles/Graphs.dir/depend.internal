@@ -4,6 +4,7 @@
 CMakeFiles/Graphs.dir/main.cpp.obj
  C:/Users/samik/CLionProjects/Graphs/BellmanFordEdgeList.h
  C:/Users/samik/CLionProjects/Graphs/DijkstrasShortestPathAdjacencyList.h
+ C:/Users/samik/CLionProjects/Graphs/TarjanScc.h
  C:/Users/samik/CLionProjects/Graphs/checkIfBiPartite.h
  C:/Users/samik/CLionProjects/Graphs/constructGraph.h
  C:/Users/samik/CLionProjects/Graphs/findBridgesAndArticulationPoints.h

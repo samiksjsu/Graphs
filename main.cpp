@@ -7,13 +7,14 @@
 #include "searchAlgorithms.h"
 #include "checkIfBiPartite.h"
 #include "findBridgesAndArticulationPoints.h"
+#include "TarjanScc.h"
 using namespace std;
 
 int main() {
 
 
-    findBridgesAndArticulationPoints g1;
-    g1.main();
+    TarjanScc t1;
+    t1.getScc();
 
     cout << "Hello World" << endl;
 }

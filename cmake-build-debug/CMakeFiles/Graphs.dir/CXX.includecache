@@ -24,6 +24,18 @@ limits
 algorithm
 -
 
+C:/Users/samik/CLionProjects/Graphs/TarjanScc.h
+stack
+-
+climits
+-
+map
+-
+iostream
+-
+constructGraph.h
+C:/Users/samik/CLionProjects/Graphs/constructGraph.h
+
 C:/Users/samik/CLionProjects/Graphs/checkIfBiPartite.h
 vector
 -
@@ -69,6 +81,8 @@ checkIfBiPartite.h
 C:/Users/samik/CLionProjects/Graphs/checkIfBiPartite.h
 findBridgesAndArticulationPoints.h
 C:/Users/samik/CLionProjects/Graphs/findBridgesAndArticulationPoints.h
+TarjanScc.h
+C:/Users/samik/CLionProjects/Graphs/TarjanScc.h
 
 C:/Users/samik/CLionProjects/Graphs/searchAlgorithms.h
 unordered_map

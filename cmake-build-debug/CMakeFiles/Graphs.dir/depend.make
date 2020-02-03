@@ -3,6 +3,7 @@
 
 CMakeFiles/Graphs.dir/main.cpp.obj: ../BellmanFordEdgeList.h
 CMakeFiles/Graphs.dir/main.cpp.obj: ../DijkstrasShortestPathAdjacencyList.h
+CMakeFiles/Graphs.dir/main.cpp.obj: ../TarjanScc.h
 CMakeFiles/Graphs.dir/main.cpp.obj: ../checkIfBiPartite.h
 CMakeFiles/Graphs.dir/main.cpp.obj: ../constructGraph.h
 CMakeFiles/Graphs.dir/main.cpp.obj: ../findBridgesAndArticulationPoints.h
